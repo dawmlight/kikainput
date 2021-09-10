@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 #
-# Copyright 2015 the original author or authors.
+# Copyright 2021 北京新美互通科技有限公司.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
