@@ -1,39 +1,70 @@
 # kikainput
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 简介
+kikainput是一个轻量级的输入法应用，支持在运行OpenHarmony OS的智能终端上。
+## 目录
 
-#### 软件架构
-软件架构说明
+```
+├─entry
+│  │  .gitignore
+│  │  build.gradle
+│  │  package.json
+│  │  proguard-rules.pro
+│  │
+│  └─src
+│      └─main
+│          │  config.json                              #项目配置文件
+│          │
+│          ├─js
+│          │  └─default
+│          │      │  app.js                            
+│          │      │
+│          │      ├─common
+│          │      │  └─images
+│          │      │          bg-tv.jpg
+│          │      │          delete.png
+│          │      │          down.png
+│          │      │          return.png
+│          │      │          shift light long.png
+│          │      │          shift light.png
+│          │      │          shift.png
+│          │      │          Wallpaper.png
+│          │      │
+│          │      ├─i18n
+│          │      │      en-US.json
+│          │      │      zh-CN.json
+│          │      │
+│          │      └─pages
+│          │          ├─index
+│          │          │      index.css				    #项目样式文件
+│          │          │      index.hml                  #项目view文件   
+│          │          │      index.js                   #项目逻辑页面
+│          │          │
+│          │          └─second
+│          │                  second.css
+│          │                  second.hml
+│          │                  second.js
+│          │
+│          └─resources
+│              └─base
+│                  ├─element
+│                  │      string.json
+│                  │
+│                  └─media
+│                          icon.png
 
+```
 
-#### 安装教程
+## 使用场景
+**支持语言:** JavaScript
+**操作系统限制:** OpenHarmony操作系统
+## 开发步骤
+**1.样式布局，以及逻辑修改**
+找到pages文件夹中的index文件夹。在.hml .css文件中进行样式的修改,在.js文件中进行逻辑的修改。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+**2.配置签名文件然后进行打包**
+配置签名文件可以参照:[https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/quick-start/%E9%85%8D%E7%BD%AEOpenHarmony%E5%BA%94%E7%94%A8%E7%AD%BE%E5%90%8D%E4%BF%A1%E6%81%AF.md]()
 
-#### 使用说明
+**3.把生产的签名文件上传到开发板上进行调试**
+具体操作可参照：[https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/quick-start/%E5%AE%89%E8%A3%85%E8%BF%90%E8%A1%8COpenHarmony%E5%BA%94%E7%94%A8.md]()
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
